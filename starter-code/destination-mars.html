@@ -5,33 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/mars-style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow Condensed">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellefair">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
+  <div class="container">
+    <div class="blur-nav">
+      <div class="blur-div">
+        <div class="blur-wrapper">
+          <div class="blur"></div>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <img src="assets/shared/logo.svg" alt="">
+          </div>
+          <hr>
+          <nav>
+            <ul>
+              <li><a href="./index.html">
+                <div id="home">
+                  <div id="num">00</div>
+                  <div>Home</div>
+                </div>
+              </a></li>
+              <li><a href="destination-moon.html">
+                <div id="destination">
+                  <div id="num">01</div>
+                  <div>Destination</div>
+                </div>
+              </a></li>
+              <li><a href="./crew-commander.html">
+                <div id="crew">
+                  <div id="num">02</div>
+                  <div>Crew</div>
+                </div>
+              </a></li>
+              <li><a href="./technology-vehicle.html">
+                <div id='technology'>
+                  <div id="num">03</div>
+                  <div>Technology</div>
+                </div>
+              </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class='pick-destination'>
+      <p id='zero-one'>01</p>
+      <p>pick your destination</p>
+    </div>
+    <div class='mars'>
+      <img id='mars-img' src="./assets/destination/image-mars.png" alt="moon">
+      <div class='nav-and-info'>
+        <div class="new-nav">
+          <nav>
+            <ul>
+              <li><a href="./destination-moon.html">
+                <div id="destination-moon">
+                  <div>Moon</div>
+                </div>
+              </a></li>
+              <li><a href="./destination-mars.html">
+                <div id="destination-mars">
+                  <div>mars</div>
+                </div>
+              </a></li>
+              <li><a href="./destination-europa.html">
+                <div id="destination-europa">
+                  <div>europa</div>
+                </div>
+              </a></li>
+              <li><a href="./destination-titan.html">
+                <div id='destination-titan'>
+                  <div>titan</div>
+                </div>
+              </a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="mars">
+          <p>mars</p>
+        </div>
+        <div>
+          <p id='description'>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+            the tallest planetary mountain in our solar system. It’s two and a half times 
+            the size of Everest!</p>
+        </div>
+        <hr>
+        <div class='last-sec'>
+          <div class='column'>
+            <p id='word'>avg. distance</p>
+            <p id='number'>225 mil. km</p>
+          </div>
+          <div class='column'>
+            <p id='word'>est. travel time</p>
+            <p id='number'>9 months</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  </div>
 
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
 </body>
 </html>
