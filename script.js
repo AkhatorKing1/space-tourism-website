@@ -43,6 +43,8 @@
     const newNav = document.querySelector('.new-nav')
     const memberPosition = document.querySelector('#member-position')
     const navAndInfo = document.querySelector('.nav-and-info')
+    const techType = document.querySelector('.tech-type')
+    const techTypeImg = document.querySelector('#tech-type-img')
 
     console.log($('.nav-and-info').children()[0])
 
@@ -50,17 +52,17 @@
 
     if($('.nav-and-info').children()[0] !== $("div.new-nav")[0]) {
         console.log(true)
-        function moveUp(a) {
-            navAndInfo.insertBefore(newNav, a)
+        function moveUp() {
+            navAndInfo ? navAndInfo.insertBefore(newNav, memberPosition) && console.log('crew') : techType.insertBefore(newNav, techTypeImg) && console.log('tech');
         } 
         $(window).resize(function() {
             if ($(window).width() <768) {
-                moveUp(memberPosition)
+                moveUp()
              }
          });
     
         if ($(window).width() <768) {
-            moveUp(memberPosition)
+            moveUp()
          }
     } else (console.log(false))
 

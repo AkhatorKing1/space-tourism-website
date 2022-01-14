@@ -194,21 +194,21 @@ nav ul li a {
 .new-nav {
     /* background: slateblue; */
     color: #0B0D17;
-    width: 5.55vw;
-    height: 33.66vh;
+    width: 152px;
     font-family: 'Bellefair';
-    font-size: 32px;
+    font-size: 16px;
     font-weight: lighter;
     text-transform: uppercase;
-    letter-spacing: 2.7px;
+    margin-top: 4.78vh;
+    margin-bottom: 3.66vh;
 }
 
 .new-nav nav ul {
     margin: 0;
     padding: 0;
-    height: 33.66vh;
+    height: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -222,8 +222,8 @@ nav ul li a {
 
 #technology-capsule{
     background: #FFFFFF;
-    width: 5.55vw;
-    height: 5.55vw;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     color: black;
     display: flex;
@@ -234,18 +234,14 @@ nav ul li a {
 
 #technology-spaceport, #technology-vehicle {
     /* background: #FFFFFF; */
-    width: 5.55vw;
-    height: 5.55vw;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-#technology-vehicle:hover, #technology-spaceport:hover, #technology-capsule:hover {
-    border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .info {
@@ -295,7 +291,7 @@ p {
     margin: 0px;
 }
 
-#capsule-img {
+#tech-type-img {
     /* background: violet; */
     width: 100vw;
     height: 170px;
