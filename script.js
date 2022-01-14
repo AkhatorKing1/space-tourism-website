@@ -43,18 +43,26 @@
     const newNav = document.querySelector('.new-nav')
     const memberPosition = document.querySelector('#member-position')
     const navAndInfo = document.querySelector('.nav-and-info')
-    function moveUp(a) {
-        navAndInfo.insertBefore(newNav, a)
-    } 
-    $(window).resize(function() {
+
+    console.log($('.nav-and-info').children()[0])
+
+    console.log($('div.new-nav')[0])
+
+    if($('.nav-and-info').children()[0] !== $("div.new-nav")[0]) {
+        console.log(true)
+        function moveUp(a) {
+            navAndInfo.insertBefore(newNav, a)
+        } 
+        $(window).resize(function() {
+            if ($(window).width() <768) {
+                moveUp(memberPosition)
+             }
+         });
+    
         if ($(window).width() <768) {
             moveUp(memberPosition)
          }
-     });
-
-    if ($(window).width() <768) {
-        moveUp(memberPosition)
-     }
+    } else (console.log(false))
 
      const vehicle = document.querySelector('.vehicle')
      const spaceport = document.querySelector('.spaceport')
