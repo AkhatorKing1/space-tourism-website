@@ -7,10 +7,10 @@ body {
 
 .blur-div {
     /* background: red; */
-    display: none;
+    display: flex;
     justify-content: flex-end;
-    position: absolute;
-    /* display:none */
+    position: fixed;
+    display: none;
 }
 
 .blur-wrapper {
@@ -29,7 +29,7 @@ body {
     width: 67.7vw;
     height: 100vh;
     backdrop-filter: contrast(92%);
-    filter: blur(20px);
+    filter: blur(35px);
 }
 
 .logo {
@@ -41,8 +41,18 @@ hr {
 }
 
 .hamburger{
-    position: absolute;
-    right: 6.4vw;
+    /* background: green; */
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    /* right: 6.4vw; */
+    height: 88px;
+}
+
+.hamburger img {
+    /* background: goldenrod; */
+    width: 24px;
+    height: 21px;
 }
 
 .nav-bar {
@@ -53,16 +63,16 @@ hr {
 }
 
 .nav-wrapper {
+    /* background: crimson; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 87.2vw;
-    height: 13.19vh;
+    height: 88px;
 }
 
 nav {
     display: none;
-    flex-direction: column;
     width: 67.7vw;
     height: 100vh;
     margin-top: 0px;
@@ -72,27 +82,29 @@ nav {
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 2.7px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
 }
 
 .close {
     /* background: green; */
-    height: 13.19vh;
+    height: 88px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 .close img {
-    width: 5.09vw;
+    /* background: goldenrod; */
+    width: 19.05px;
+    height: 19.05px;
     margin-right: 7.05vw;
 }
 
 nav ul {
     /* background: cornflowerblue; */
-    margin-top: 8.1vh;
+    margin-top: 30px;
 }
 
 nav ul li {
@@ -116,17 +128,8 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     width: 18.66vw;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid white;
     height: 2.84vh;
     margin-bottom: 4.8vh;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-#home:hover, #destination:hover, #crew:hover, #technology:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 #destination {
@@ -134,13 +137,8 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     width: 34.66vw;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
     height: 2.84vh;
     margin-bottom: 4.8vh;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 #crew {
@@ -148,13 +146,8 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     width: 18.93vw;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
     height: 2.84vh;
     margin-bottom: 4.8vh;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 #technology {
@@ -162,12 +155,7 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     width: 33.86vw;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
     height: 2.84vh;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 .home-explore {
@@ -225,8 +213,8 @@ p {
 .explore {
     background-color: white;
     color: #0B0D17;
-    width: 40vw;
-    height: 40vw;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,6 +307,7 @@ p {
         font-weight: lighter;
         text-transform: uppercase;
         letter-spacing: 2.7px;
+        position: static;
     }
     
     nav ul {

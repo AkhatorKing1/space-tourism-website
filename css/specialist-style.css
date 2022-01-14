@@ -1,64 +1,78 @@
 body {
     margin: 0px;
-    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    padding: 0px;
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
     background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-color: #080e1a;
     image-rendering: -webkit-optimize-contrast;
 }
 
 .blur-div {
     display: flex;
     justify-content: flex-end;
-    margin-top: 4.44vh;
+    position: fixed;
+    display: none;
 }
 
 .blur-wrapper {
     display: flex;
     justify-content: right;
     align-items: flex-start;
-    width: 96vw;
-    height: 10.7vh;
+    width: 100vw;
+    height: 100vh;
     align-self: right;
     overflow: hidden;
     cursor: move;
 }
 
 .blur {
-    width: 57.6vw;
-    height: 10.7vh;
+    width: 67.7vw;
+    height: 100vh;
     backdrop-filter: contrast(92%);
-    filter: blur(20px);
+    filter: blur(35px);
 }
 
 .logo {
-    width: 3.33vw;
+    width: 10.66vw;
 }
 
 .nav-wrapper hr {
-    position: absolute;
-    width: 32.8vw;
-    margin-left: 7.77vw;
-    opacity: 22.15%;
+    display: none;
 }
+
+.hamburger{
+    display: flex;
+    align-items: center;
+    height: 88px;
+}
+
+.hamburger img {
+    /* background: goldenrod; */
+    width: 24px;
+    height: 21px;
+}
+
 .nav-bar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100vw;
-    margin-top: -10.7vh;
+    position: relative;
 }
 
 .nav-wrapper {
+    /* background: coral; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 96vw;
-    height: 10.7vh;
+    width: 87.2vw;
+    height: 88px;
 }
 
 .nav-wrapper nav {
-    display: flex;
-    align-items: center;
-    width: 57.6vw;
-    height: 10.7vh;
+    display: none;
+    width: 67.7vw;
+    height: 100vh;
     margin-top: 0px;
     opacity: 0.9;
     font-family: 'Barlow Condensed';
@@ -66,17 +80,26 @@ body {
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 2.7px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.close {
+    height: 88px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.close img {
+    width: 19.05px;
+    height: 19.05px;
+    margin-right: 7.05vw;
 }
 
 .nav-wrapper nav ul {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 37.63vw;
-    margin-left: 14.8%;
+    margin-top: 30px;
 }
 
 nav ul li {
@@ -99,69 +122,49 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 4.8vw;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-    height: 10.7vh;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-#home:hover, #destination:hover, #crew:hover, #technology:hover {
-    border-bottom: 3px solid #979797;
+    width: 18.66vw;
+    height: 2.84vh;
+    margin-bottom: 4.8vh;
 }
 
 #destination {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 9vw;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-    height: 10.7vh;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    width: 34.66vw;
+    height: 2.84vh;
+    margin-bottom: 4.8vh;
 }
 
 #crew {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 4.9vw;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid white;
-    height: 10.7vh;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    width: 18.93vw;
+    height: 2.84vh;
+    margin-bottom: 4.8vh;
 }
 
 #technology {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 8.8vw;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-    height: 10.7vh;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    width: 33.86vw;
+    height: 2.84vh;
 }
 
 .meet-crew {
     /* background: turquoise; */
     display: flex;
     justify-content: space-between;
-    width: 19.86vw;
-    margin-left: 11.56vw;
-    margin-top: 8.44vh;
+    width: 166px;
+    /* margin-left: 105px; */
+    margin-left: calc((100% - 166px)/2);
+    margin-top: 0px;
     font-family: 'Barlow Condensed';
-    font-size: 1.87vw;
+    font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 0.34vw;
+    letter-spacing: 2.7px;
     color: #FFFFFF;  
 }
 
@@ -173,63 +176,74 @@ nav ul li a {
 .specialist {
     /* background: salmon; */
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 75.6vw;
-    height: 55.4vh;
-    margin-left: 11.45vw;
-    margin-top: 17.11vh;
+    align-items: center;
+    width: 87.2vw;
+    margin-left: 6.4vw;
+    margin-top: 4.5vh;
 }
 
 #specialist-img {
     /* background: violet; */
-    width: 30.45vw;
-    height: 72vh;
-    /* margin-left: 1.5vw; */
+    width: 153.92px;
+    height: 222px;
+    /* margin-left: 5.65vw; */
 }
 
 .nav-and-info {
     /* background: skyblue; */
-    width: 42.63vw;
-    height: 55.4vh;
+    width: 87.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 5vh; */
 }
 
-#specialist {
+.nav-and-info hr {
+    /* background-color: #383B4B; */
+    width: 87.2vw;
+    margin: 0;
+    opacity: 22.15%;
+}
+
+#member-position {
     font-family: 'Bellefair';
     /* background: yellow; */
-    font-size: 2.22vw;
-    width: 21.45vw;
+    font-size: 16px;
+    width: 50vw;
     text-align: center;
     text-transform: uppercase;
     color: white;
     opacity: 0.5;
-    height: 4.11vh;
-    margin-bottom: 1.66vh;
+    height: 18px;
+    margin-bottom: 1.12vh;
 }
 
 #shuttleworth {
     font-family: 'Bellefair';
     /* background: rgb(0, 140, 255); */
-    font-size: 3.88vw;
-    width: 42.63vw;
+    font-size: 24px;
+    width: 87.2vw;
     text-align: center;
     text-transform: uppercase;
     color: white;
-    height: 7.11vh;
+    height: 28px;
     /* margin-top: 4.1vh; */
-    margin-bottom: 3vh;
+    margin-bottom: 2.25vh;
 }
 
 #description {
     font-family: 'Barlow';
-    font-size: 1.25vw;
-    width: 30vw;
-    height: 14.22vh;
-    line-height: 3.5vh;
-    text-align: left;
+    font-size: 15px;
+    width: 87.2vw;
+    height: 100px;
+    line-height: 25px;
+    text-align: center;
     color: #D0D6F9;
     /* background-color: thistle; */
-    margin-bottom: 13.33vh;
+    /* margin-bottom: 13.33vh; */
 }
 
 p {
@@ -238,13 +252,15 @@ p {
 
 .new-nav {
     /* background: slateblue; */
-    width: 9.16vw;
+    width: 23.46vw;
     /* height: 3.77vh; */
     font-family: 'Barlow Condensed';
     font-size: 16px;
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 2.7px;
+    margin-top: 4.5vh;
+    margin-bottom: 4.5vh;
 }
 
 .new-nav nav ul {
@@ -258,19 +274,319 @@ p {
 
 #crew-specialist{
     background: #FFFFFF;
-    width: 1.04vw;
-    height: 1.04vw;
+    width: 2.66vw;
+    height: 2.66vw;
     border-radius: 50%;
 }
 
 #crew-commander, #crew-pilot, #crew-engineer {
     background: #FFFFFF;
     opacity: 0.17;
-    width: 1.04vw;
-    height: 1.04vw;
+    width: 2.66vw;
+    height: 2.66vw;
     border-radius: 50%;
 }
 
-#crew-specialist:hover, #crew-commander:hover, #crew-pilot:hover, #crew-engineer:hover {
-    opacity: 0.5;
+
+@media (min-width: 768px) {
+    body {
+        margin: 0px;
+        background-image: url("../assets/crew/background-crew-desktop.jpg");
+        background-size: 100vw 100vh;
+        image-rendering: -webkit-optimize-contrast;
+    }
+    
+    .blur-div {
+        display: flex;
+        justify-content: flex-end;
+        position: static;
+        margin-top: 4.44vh;
+    }
+    
+    .blur-wrapper {
+        display: flex;
+        justify-content: right;
+        align-items: flex-start;
+        width: 96vw;
+        height: 10.7vh;
+        align-self: right;
+        overflow: hidden;
+        cursor: move;
+    }
+    
+    .blur {
+        width: 57.6vw;
+        height: 10.7vh;
+        backdrop-filter: contrast(92%);
+        filter: blur(20px);
+    }
+    
+    .logo {
+        width: 3.33vw;
+    }
+    
+    .nav-wrapper hr {
+        display: block;
+        position: absolute;
+        width: 32.8vw;
+        margin-left: 7.77vw;
+        opacity: 22.15%;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: flex-end;
+        width: 100vw;
+        margin-top: -10.7vh;
+    }
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 96vw;
+        height: 10.7vh;
+    }
+    
+    .nav-wrapper nav {
+        display: flex;
+        align-items: center;
+        width: 57.6vw;
+        height: 10.7vh;
+        margin-top: 0px;
+        opacity: 0.9;
+        font-family: 'Barlow Condensed';
+        font-size: 16px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        position: static;
+    }
+
+    .close {
+        display: none;
+    }
+    
+    .nav-wrapper nav ul {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 37.63vw;
+        margin-left: 14.8%;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    nav ul li a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+    
+    #num {
+        font-weight: bold;
+    }
+    
+    #home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 4.8vw;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        height: 10.7vh;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    
+    #home:hover, #destination:hover, #crew:hover, #technology:hover {
+        border-bottom: 3px solid #979797;
+    }
+    
+    #destination {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 9vw;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        height: 10.7vh;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    
+    #crew {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 4.9vw;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid white;
+        height: 10.7vh;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    
+    #technology {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 8.8vw;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        height: 10.7vh;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    
+    .meet-crew {
+        /* background: turquoise; */
+        display: flex;
+        justify-content: space-between;
+        width: 19.86vw;
+        margin-left: 11.56vw;
+        margin-top: 8.44vh;
+        font-family: 'Barlow Condensed';
+        font-size: 1.87vw;
+        text-transform: uppercase;
+        letter-spacing: 0.34vw;
+        color: #FFFFFF;  
+    }
+    
+    #zero-two{
+        font-weight: bold;
+        opacity: 0.25;
+    }
+    
+    .specialist {
+        /* background: salmon; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 79.02vw;
+        height: 55.4vh;
+        margin-left: 11.45vw;
+        margin-top: 17.11vh;
+    }
+    
+    #specialist-img {
+        /* background: violet; */
+        width: 30.45vw;
+        height: 72vh;
+        /* margin-left: 1.5vw; */
+    }
+    
+    .nav-and-info {
+        /* background: skyblue; */
+        width: 42.63vw;
+        height: 55.4vh;
+        display: block;
+    }
+    
+    .nav-and-info  hr{
+        display: none;
+    }
+    
+    #member-position {
+        font-family: 'Bellefair';
+        /* background: yellow; */
+        font-size: 2.22vw;
+        width: 21.45vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        opacity: 0.5;
+        height: 4.11vh;
+        margin-bottom: 1.66vh;
+    }
+    
+    #shuttleworth {
+        font-family: 'Bellefair';
+        /* background: rgb(0, 140, 255); */
+        font-size: 3.88vw;
+        width: 42.63vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        height: 7.11vh;
+        /* margin-top: 4.1vh; */
+        margin-bottom: 3vh;
+    }
+    
+    #description {
+        font-family: 'Barlow';
+        font-size: 1.25vw;
+        width: 30vw;
+        height: 14.22vh;
+        line-height: 3.5vh;
+        text-align: left;
+        color: #D0D6F9;
+        /* background-color: thistle; */
+        margin-bottom: 13.33vh;
+    }
+    
+    p {
+        margin: 0px;
+    }
+    
+    .new-nav {
+        /* background: slateblue; */
+        width: 9.16vw;
+        /* height: 3.77vh; */
+        font-family: 'Barlow Condensed';
+        font-size: 16px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .new-nav nav ul {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #crew-specialist{
+        background: #FFFFFF;
+        width: 1.04vw;
+        height: 1.04vw;
+        border-radius: 50%;
+    }
+    
+    #crew-commander, #crew-pilot, #crew-engineer {
+        background: #FFFFFF;
+        opacity: 0.17;
+        width: 1.04vw;
+        height: 1.04vw;
+        border-radius: 50%;
+    }
+    
+    #crew-specialist:hover, #crew-commander:hover, #crew-pilot:hover, #crew-engineer:hover {
+        opacity: 0.5;
+    }
 }
