@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("../assets/crew/background-crew-mobile.jpg");
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-color: #080e1a;
@@ -11,7 +11,7 @@ body {
 .blur-div {
     display: flex;
     justify-content: flex-end;
-    position: absolute;
+    position: fixed;
     display: none;
 }
 
@@ -80,7 +80,7 @@ body {
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 2.7px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
 }
@@ -153,13 +153,12 @@ nav ul li a {
     height: 2.84vh;
 }
 
-.meet-crew {
+.space-launch {
     /* background: turquoise; */
     display: flex;
     justify-content: space-between;
-    width: 166px;
-    /* margin-left: 105px; */
-    margin-left: calc((100% - 166px)/2);
+    width: 176px;
+    margin-left: calc((100% - 176px)/2);
     margin-top: 0px;
     font-family: 'Barlow Condensed';
     font-size: 16px;
@@ -168,60 +167,104 @@ nav ul li a {
     color: #FFFFFF;  
 }
 
-#zero-two{
+#zero-three{
     font-weight: bold;
     opacity: 0.25;
 }
 
-.commander {
+.tech-wrapper {
+    /* background: darkslategray; */
+    display: block;
+    /* justify-content: flex-end; */
+    height: 58.55vh;
+    /* margin-left: 11.45vw; */
+    margin-top: 3.5vh;
+}
+
+.tech-type {
     /* background: salmon; */
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
-    width: 87.2vw;
-    margin-left: 6.4vw;
-    margin-top: 4.5vw;
+    width: 100vw;
+    margin-top: 4.5vh;
 }
 
-#commander-img {
-    /* background: violet; */
-    width: 167px;
-    height: 222px;
-    /* margin-left: 5.65vw; */
+.new-nav {
+    /* background: slateblue; */
+    color: #0B0D17;
+    width: 152px;
+    font-family: 'Bellefair';
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 4.78vh;
+    margin-bottom: 3.66vh;
 }
 
-.nav-and-info {
+.new-nav nav ul {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .new-nav nav ul li {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#technology-vehicle{
+    background: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+#technology-spaceport, #technology-capsule {
+    /* background: #FFFFFF; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info {
     /* background: skyblue; */
     width: 87.2vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 5vh; */
 }
 
-.nav-and-info hr {
-    /* background-color: #383B4B; */
-    width: 87.2vw;
-    margin: 0;
-    opacity: 22.15%;
-}
-
-#member-position {
+#terminology {
     font-family: 'Bellefair';
     /* background: yellow; */
-    font-size: 16px;
-    width: 28.533vw;
+    font-size: 14px;
+    width: 50vw;
     text-align: center;
     text-transform: uppercase;
-    color: white;
-    opacity: 0.5;
-    height: 18px;
-    margin-bottom: 1.12vh;
+    color: #D0D6F9;
+    height: 17px;
+    margin-bottom: 1.26vh;
 }
 
-#hurley {
+#vehicle {
     font-family: 'Bellefair';
     /* background: rgb(0, 140, 255); */
     font-size: 24px;
@@ -238,51 +281,19 @@ nav ul li a {
     font-family: 'Barlow';
     font-size: 15px;
     width: 87.2vw;
-    height: 100px;
+    height: 175px;
     line-height: 25px;
     text-align: center;
     color: #D0D6F9;
-    /* background-color: thistle; */
-    /* margin-bottom: 13.33vh; */
 }
 
 p {
     margin: 0px;
 }
 
-.new-nav {
-    /* background: slateblue; */
-    width: 23.46vw;
-    /* height: 3.77vh; */
-    font-family: 'Barlow Condensed';
-    font-size: 16px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    letter-spacing: 2.7px;
-    margin-top: 4.5vh;
-    margin-bottom: 4.5vh;
-}
-
-.new-nav nav ul {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#crew-commander{
-    background: #FFFFFF;
-    width: 2.66vw;
-    height: 2.66vw;
-    border-radius: 50%;
-}
-
-#crew-specialist, #crew-pilot, #crew-engineer {
-    background: #FFFFFF;
-    opacity: 0.17;
-    width: 2.66vw;
-    height: 2.66vw;
-    border-radius: 50%;
+#tech-type-img {
+    /* background: violet; */
+    width: 100vw;
+    height: 170px;
+    /* margin-left: 9vw; */
 }

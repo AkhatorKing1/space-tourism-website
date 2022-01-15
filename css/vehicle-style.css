@@ -298,6 +298,10 @@ p {
     /* margin-left: 9vw; */
 }
 
+.portrait {
+    display: none;
+}
+
 
 
 
@@ -312,6 +316,7 @@ p {
     .blur-div {
         display: flex;
         justify-content: flex-end;
+        position: static;
         margin-top: 4.44vh;
     }
     
@@ -343,6 +348,11 @@ p {
         margin-left: 7.77vw;
         opacity: 22.15%;
     }
+
+    .hamburger{
+        display: none;
+    }
+
     .nav-bar {
         display: flex;
         justify-content: flex-end;
@@ -370,6 +380,11 @@ p {
         font-weight: lighter;
         text-transform: uppercase;
         letter-spacing: 2.7px;
+        position: static;
+    }
+
+    .close {
+        display: none;
     }
     
     .nav-wrapper nav ul {
@@ -410,6 +425,7 @@ p {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
+        margin-bottom: 0;
     }
     
     #home:hover, #destination:hover, #crew:hover, #technology:hover {
@@ -427,6 +443,7 @@ p {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
+        margin-bottom: 0;
     }
     
     #crew {
@@ -440,6 +457,7 @@ p {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
+        margin-bottom: 0;
     }
     
     #technology {
@@ -453,6 +471,7 @@ p {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
+        margin-bottom: 0;
     }
     
     .space-launch {
@@ -483,13 +502,15 @@ p {
         margin-top: 3.5vh;
     }
     
-    .vehicle {
+    .tech-type {
         /* background: salmon; */
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         width: 88.3vw;
         height: 57.22vh;
+        margin-top: 0;
     }
     
     .new-nav {
@@ -502,6 +523,8 @@ p {
         font-weight: lighter;
         text-transform: uppercase;
         letter-spacing: 2.7px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     
     .new-nav nav ul {
@@ -554,6 +577,7 @@ p {
         width: 32.63vw;
         height: 33.66vh;
         margin-left: -2.8vw;
+        align-items: flex-start;
     }
     
     #terminology {
@@ -598,11 +622,19 @@ p {
         margin: 0px;
     }
     
-    #vehicle-img {
+    #tech-type-img {
         /* background: violet; */
         width: 33.7vw;
         height: 58.55vh;
         /* margin-left: 9vw; */
+    }
+
+    .portrait {
+        display: block;
+    }
+
+    .landscape {
+        display: none;
     }
     
     

@@ -5,7 +5,7 @@
     const blurDiv = document.querySelector('.blur-div')
 
     $(window).resize(function() {
-        if ($(window).width() >=768) {
+        if ($(window).width() >=550) {
             location.reload();
          }
      });
@@ -56,12 +56,12 @@
             navAndInfo ? navAndInfo.insertBefore(newNav, memberPosition) && console.log('crew') : techType.insertBefore(newNav, techTypeImg) && console.log('tech');
         } 
         $(window).resize(function() {
-            if ($(window).width() <768) {
+            if ($(window).width() <550) {
                 moveUp()
              }
          });
     
-        if ($(window).width() <768) {
+        if ($(window).width() <550) {
             moveUp()
          }
     } else (console.log(false))
