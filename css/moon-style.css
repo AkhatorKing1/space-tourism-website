@@ -5,7 +5,7 @@ body {
     /* background-size: 100vw 850px; */
     background-size: cover;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     background-repeat: no-repeat;
     background-color: #080e1a;
     image-rendering: -webkit-optimize-contrast;
@@ -654,17 +654,23 @@ p {
 } */
 
 
-@media (min-width: 550px) {
+@media (min-width: 768px) {
     body {
         margin: 0px;
         padding: 0px;
         background-image: url("../assets/destination/background-destination-tablet.jpg");
-        background-size: cover;
-        width: 100vw;
+        /* background-size: cover;
+        width: 100vw; */
         height: auto;
         background-repeat: no-repeat;
         background-color: #080e1a;
         image-rendering: -webkit-optimize-contrast;
+    }
+
+    @media (min-height: 1030px) {
+        body {
+            height: 100vh;
+        }
     }
     
     .blur-div {
@@ -679,7 +685,7 @@ p {
         justify-content: right;
         align-items: flex-start;
         width: 96vw;
-        height: 9.37vh;
+        height: 96px;
         align-self: right;
         overflow: hidden;
         cursor: move;
@@ -687,7 +693,7 @@ p {
     
     .blur {
         width: 57.6vw;
-        height: 9.37vh;
+        height: 96px;
         backdrop-filter: contrast(92%);
         filter: blur(20px);
     }
@@ -716,7 +722,7 @@ p {
         display: flex;
         justify-content: flex-end;
         width: 100vw;
-        margin-top: -9.37vh;
+        margin-top: -96px;
     }
     
     .nav-wrapper {
@@ -724,7 +730,7 @@ p {
         justify-content: space-between;
         align-items: center;
         width: 96vw;
-        height: 9.37vh;
+        height: 96px;
     }
     
     .nav-wrapper nav {
@@ -732,7 +738,7 @@ p {
         display: flex;
         align-items: center;
         width: 57.6vw;
-        height: 9.37vh;
+        height: 96px;
         margin-top: 0px;
         opacity: 0.9;
         font-family: 'Barlow Condensed';
@@ -778,7 +784,7 @@ p {
         width: 4.4vw;
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent;
-        height: 9.37vh;
+        height: 96px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -792,7 +798,7 @@ p {
         width: 11.06vw;
         border-top: 3px solid transparent;
         border-bottom: 3px solid white;
-        height: 9.37vh;
+        height: 96px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -806,7 +812,7 @@ p {
         width: 4.4vw;
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent;
-        height: 9.37vh;
+        height: 96px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -820,7 +826,7 @@ p {
         width: 11.06vw;
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent;
-        height: 9.37vh;
+        height: 96px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -998,6 +1004,8 @@ p {
         margin: 0px;
         background-image: url("../assets/destination/background-destination-desktop.jpg");
         background-size: 100vw 100vh;
+        width: auto;
+        height: auto;
         image-rendering: -webkit-optimize-contrast;
     }
     

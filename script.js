@@ -5,10 +5,11 @@
     const blurDiv = document.querySelector('.blur-div')
 
     $(window).resize(function() {
-        if ($(window).width() >=550) {
+        if ($(window).width() >=768) {
             location.reload();
          }
      });
+     
 
     function displayNav() {
         if(nav.style.display === "block") {
@@ -57,12 +58,12 @@
         }
 
         $(window).resize(function() {
-            if ($(window).width() <550) {
+            if ($(window).width() <768) {
                 moveUp()
             }
          });
     
-        if ($(window).width() <550) {
+        if ($(window).width() <768) {
             moveUp()
         }
         
@@ -75,12 +76,12 @@
         }
     
         $(window).resize(function() {
-            if ($(window).width() >550 && $(window).width() <992) {
+            if ($(window).width() >768 && $(window).width() <992) {
                 moveDown()
             }
             });
     
-        if ($(window).width() >550 && $(window).width() <992) {
+        if ($(window).width() >768 && $(window).width() <992) {
             moveDown()
         }
     } else (console.log('no .tech-type'))

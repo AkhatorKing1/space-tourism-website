@@ -1,7 +1,9 @@
 body {
     margin: 0px;
     background-image: url("../assets/home/background-home-mobile.jpg");
-    background-size: 100vw 100vh;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
     image-rendering: -webkit-optimize-contrast;
 }
 
@@ -15,7 +17,7 @@ body {
 
 .blur-wrapper {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: flex-start;
     width: 100vw;
     height: 100vh;
@@ -26,7 +28,7 @@ body {
 
 .blur {
     /* background: blue; */
-    width: 67.7vw;
+    width: 254px;
     height: 100vh;
     backdrop-filter: contrast(92%);
     filter: blur(35px);
@@ -73,7 +75,7 @@ hr {
 
 nav {
     display: none;
-    width: 67.7vw;
+    width: 254px;
     height: 100vh;
     margin-top: 0px;
     opacity: 0.9;
@@ -99,7 +101,7 @@ nav {
     /* background: goldenrod; */
     width: 19.05px;
     height: 19.05px;
-    margin-right: 7.05vw;
+    margin-right: 26.45px;
 }
 
 nav ul {
@@ -127,7 +129,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 18.66vw;
+    width: 70px;
     height: 2.84vh;
     margin-bottom: 4.8vh;
 }
@@ -136,7 +138,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 34.66vw;
+    width: 130px;
     height: 2.84vh;
     margin-bottom: 4.8vh;
 }
@@ -145,7 +147,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 18.93vw;
+    width: 71px;
     height: 2.84vh;
     margin-bottom: 4.8vh;
 }
@@ -154,7 +156,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 33.86vw;
+    width: 127px;
     height: 2.84vh;
 }
 
@@ -170,7 +172,7 @@ nav ul li a {
 }
 
 .home {
-    height: 41.3vh;
+    height: 276px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -183,7 +185,7 @@ nav ul li a {
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.68vw;
+    letter-spacing: 2.7px;
     color: #D0D6F9;
 }
 
@@ -195,13 +197,13 @@ nav ul li a {
     color: white;
     display: flex;
     align-items: center;
-    height: 14.99vh;
+    height: 100px;
 }
 
 #second {
     font-family: 'Barlow';
     font-size: 15px;
-    line-height: 3.7vh;
+    line-height: 25px;
     text-align: center;
     color: #D0D6F9;
 }
@@ -222,16 +224,23 @@ p {
     font-family: 'Bellefair';
     font-size: 20px;
     text-transform: uppercase;
-    margin-top: 12.14vh;
+    margin-top: 81px;
+    margin-bottom: 30px;
 }
 
 
-@media (min-width: 550px) {
+@media (min-width: 768px) {
     body {
         margin: 0px;
         background-image: url("../assets/home/background-home-tablet.jpg");
-        background-size: 100vw 100vh;
+        height: auto;
         image-rendering: -webkit-optimize-contrast;
+    }
+
+    @media (min-height: 1030px) {
+        body {
+            height: 100vh;
+        }
     }
 
     .blur-div {
@@ -243,10 +252,10 @@ p {
     
     .blur-wrapper {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
         align-items: flex-start;
         width: 96vw;
-        height: 9.37vh;
+        height: 96px;
         align-self: right;
         overflow: hidden;
         cursor: move;
@@ -254,7 +263,7 @@ p {
     
     .blur {
         width: 57.6vw;
-        height: 9.37vh;
+        height: 96px;
         backdrop-filter: contrast(92%);
         filter: blur(20px);
     }
@@ -283,7 +292,7 @@ p {
         display: flex;
         justify-content: flex-end;
         width: 100vw;
-        margin-top: -9.37vh;
+        margin-top: -96px;
     }
     
     .nav-wrapper {
@@ -291,14 +300,14 @@ p {
         justify-content: space-between;
         align-items: center;
         width: 96vw;
-        height: 9.37vh;
+        height: 96px;
     }
     
     nav {
         display: flex;
         align-items: center;
         width: 57.6vw;
-        height: 9.37vh;
+        height: 96px;
         margin-top: 0px;
         opacity: 0.9;
         font-family: 'Barlow Condensed';
@@ -345,7 +354,7 @@ p {
         width: 4.4vw;
         border-top: 3px solid transparent;
         border-bottom: 3px solid white;
-        height: 9.37vh;
+        height: 96px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -360,7 +369,7 @@ p {
         width: 11.06vw;
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent;
-        height: 9.37vh;
+        height: 96px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -375,7 +384,7 @@ p {
         width: 4.4vw;
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent;
-        height: 9.37vh;
+        height: 96px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -390,7 +399,7 @@ p {
         width: 11.06vw;
         border-top: 3px solid transparent;
         border-bottom: 3px solid transparent;
-        height: 9.37vh;
+        height: 96px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -402,13 +411,13 @@ p {
         justify-content: space-between;
         align-items: center;
         width: 58.59vw;
-        margin-top: 10.35vh;
+        margin-top: 106px;
         margin-left: calc((100% - 58.59vw)/2);
         /* background: rgb(41, 3, 46); */
     }
     
     .home {
-        height: 34.6vh;
+        height: 334px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -427,19 +436,19 @@ p {
     
     #space {
         font-family: 'Bellefair';
-        font-size: 19.53vw;
+        font-size: 150px;
         text-align: center;
         text-transform: uppercase;
         color: white;
         display: flex;
         align-items: center;
-        height: 14.64vh;
+        height: 150px;
     }
     
     #second {
         font-family: 'Barlow';
         font-size: 16px;
-        line-height: 3.7vh;
+        line-height: 28px;
         text-align: center;
         color: #D0D6F9;
     }
@@ -460,7 +469,8 @@ p {
         font-family: 'Bellefair';
         font-size: 20px;
         text-transform: uppercase;
-        margin-top: 13.23vh;
+        margin-top: 156px;
+        margin-bottom: 50px;
     }
 }
 
