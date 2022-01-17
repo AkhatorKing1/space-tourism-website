@@ -659,7 +659,7 @@ p {
         /* background: rgb(70, 47, 17); */
         height: 5.95vh;
         width: 59.46vw;
-        margin-top: 2.73vh;
+        margin-top: 28px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -762,7 +762,7 @@ p {
         margin-top: 0px;
         opacity: 0.9;
         font-family: 'Barlow Condensed';
-        font-size: 16px;
+        font-size: 1.11vw;
         font-weight: lighter;
         text-transform: uppercase;
         letter-spacing: 2.7px;
@@ -797,6 +797,7 @@ p {
     }
     
     #num {
+        display: block;
         font-weight: bold;
     }
     

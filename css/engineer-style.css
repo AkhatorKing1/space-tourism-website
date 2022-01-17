@@ -662,7 +662,7 @@ p {
         margin-top: 0px;
         opacity: 0.9;
         font-family: 'Barlow Condensed';
-        font-size: 16px;
+        font-size: 1.11vw;
         font-weight: lighter;
         text-transform: uppercase;
         letter-spacing: 2.7px;
@@ -697,6 +697,7 @@ p {
     }
     
     #num {
+        display: block;
         font-weight: bold;
     }
     
@@ -795,7 +796,7 @@ p {
         /* background: violet; */
         width: 38.7vw;
         height: 67.4vh;
-        /* margin-left: 9vw; */
+        margin-left: 0;
     }
     
     .nav-and-info {

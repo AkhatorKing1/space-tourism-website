@@ -54,17 +54,37 @@
         console.log(true)
         function moveUp() {
             navAndInfo ? navAndInfo.insertBefore(newNav, memberPosition) && console.log('crew') : techType.insertBefore(newNav, techTypeImg) && console.log('tech');
-        } 
+        }
+
         $(window).resize(function() {
             if ($(window).width() <550) {
                 moveUp()
-             }
+            }
          });
     
         if ($(window).width() <550) {
             moveUp()
-         }
+        }
+        
     } else (console.log(false))
+
+    
+    if (techType) {
+        function moveDown() {
+            techType.insertBefore(newNav, techTypeImg) && console.log('navDown');
+        }
+    
+        $(window).resize(function() {
+            if ($(window).width() >550 && $(window).width() <992) {
+                moveDown()
+            }
+            });
+    
+        if ($(window).width() >550 && $(window).width() <992) {
+            moveDown()
+        }
+    } else (console.log('no .tech-type'))
+    
 
      const vehicle = document.querySelector('.vehicle')
      const spaceport = document.querySelector('.spaceport')
