@@ -12,15 +12,18 @@ body {
     display: flex;
     justify-content: flex-end;
     position: fixed;
+    margin-left: calc(100% - 254px);
     display: none;
 }
 
 .blur-wrapper {
+    /* background: chocolate; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 100vw;
+    width: 254px;
     height: 100vh;
+    /* margin-left: calc(100% - 254px); */
     align-self: right;
     overflow: hidden;
     cursor: move;

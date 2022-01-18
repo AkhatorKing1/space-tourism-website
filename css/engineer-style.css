@@ -11,18 +11,22 @@ body {
 }
 
 .blur-div {
+    /* background: red; */
     display: flex;
     justify-content: flex-end;
     position: fixed;
+    margin-left: calc(100% - 254px);
     display: none;
 }
 
 .blur-wrapper {
+    /* background: chocolate; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 100vw;
+    width: 254px;
     height: 100vh;
+    /* margin-left: calc(100% - 254px); */
     align-self: right;
     overflow: hidden;
     cursor: move;
@@ -124,7 +128,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 18.66vw;
+    width: 70px;
     height: 2.84vh;
     margin-bottom: 4.8vh;
 }
@@ -133,7 +137,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 34.66vw;
+    width: 130px;
     height: 2.84vh;
     margin-bottom: 4.8vh;
 }
@@ -142,7 +146,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 18.93vw;
+    width: 71px;
     height: 2.84vh;
     margin-bottom: 4.8vh;
 }
@@ -151,7 +155,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 33.86vw;
+    width: 127px;
     height: 2.84vh;
 }
 
@@ -207,7 +211,7 @@ nav ul li a {
     /* background-color: #383B4B; */
     width: 87.2vw;
     margin: 0;
-    opacity: 22.15%;
+    background-color: rgb(63, 61, 61, 0.1);
 }
 
 #member-position {
@@ -217,8 +221,7 @@ nav ul li a {
     width: 50vw;
     text-align: center;
     text-transform: uppercase;
-    color: white;
-    opacity: 0.5;
+    color: rgba(255, 255, 255, 0.5);
     height: 18px;
     margin-bottom: 8px;
 }
@@ -283,7 +286,7 @@ p {
 
 #crew-specialist, #crew-pilot, #crew-commander {
     background: #FFFFFF;
-    opacity: 0.17;
+    background-color: rgba(255, 255, 255, 0.17);
     width: 2.66vw;
     height: 2.66vw;
     border-radius: 50%;
@@ -584,16 +587,16 @@ p {
     
     #crew-engineer{
         background: #FFFFFF;
-        width: 0.97vh;
-        height: 0.97vh;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
     }
     
     #crew-specialist, #crew-pilot, #crew-commander {
         background: #FFFFFF;
         opacity: 0.17;
-        width: 0.97vh;
-        height: 0.97vh;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
     }
 }

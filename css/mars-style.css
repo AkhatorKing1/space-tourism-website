@@ -12,19 +12,22 @@ body {
 }
 
 .blur-div {
+    /* background: red; */
     display: flex;
     justify-content: flex-end;
     position: fixed;
+    margin-left: calc(100% - 254px);
     display: none;
 }
 
 .blur-wrapper {
-    /* background: goldenrod; */
+    /* background: chocolate; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 100vw;
+    width: 254px;
     height: 100vh;
+    /* margin-left: calc(100% - 254px); */
     align-self: right;
     overflow: hidden;
     cursor: move;
@@ -243,7 +246,7 @@ nav ul li a {
 #mars {
     /* background: indigo; */
     font-family: 'Bellefair';
-    font-size: 14.93vw;
+    font-size: 56px;
     width: 49.86vw;
     text-align: center;
     text-transform: uppercase;
@@ -272,7 +275,7 @@ p {
 .nav-and-info hr {
     width: 87.2vw;
     margin: 0;
-    opacity: 22.15%;
+    background-color: rgb(63, 61, 61, 0.1);
 }
 
 .last-sec {
@@ -303,7 +306,7 @@ p {
 
 #number {
     font-family: 'Bellefair';
-    font-size: 7.46vw;
+    font-size: 28px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
