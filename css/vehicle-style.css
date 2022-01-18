@@ -676,6 +676,7 @@ p {
     }
     
     .nav-wrapper hr {
+        display: block;
         position: absolute;
         width: 32.8vw;
         margin-left: 7.77vw;

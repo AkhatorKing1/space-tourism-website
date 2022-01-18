@@ -6,11 +6,11 @@
     const container = document.querySelector('.container')
     const homeExplore = document.querySelector('.home-explore')
 
-    $(window).resize(function() {
-        if ($(window).width() >=768) {
-            location.reload();
-         }
-     });
+    // $(window).resize(function() {
+    //     if ($(window).width() >=768) {
+    //         location.reload();
+    //      }
+    //  });
     
     let displaySwitch = "OFF"
     function displayNav() {
@@ -38,6 +38,8 @@
 
     const newDiv = document.createElement("div")
     $(newDiv).css({"background": "transparent", "width": "100vw", "height": "100vh", "position": "fixed", "opacity": "0.1"})
+    container.appendChild(newDiv)
+    container.removeChild(newDiv)
 
     hamburger.addEventListener('click', () => {
         displayNav();
@@ -90,6 +92,8 @@
     const navAndInfo = document.querySelector('.nav-and-info')
     const techType = document.querySelector('.tech-type')
     const techTypeImg = document.querySelector('#tech-type-img')
+    const info = document.querySelector(".info")
+    const crewImg = document.querySelector(".crew-image")
 
     console.log($('.nav-and-info').children()[0])
 
@@ -104,11 +108,19 @@
         $(window).resize(function() {
             if ($(window).width() <768) {
                 moveUp()
+            } 
+            else {
+                if(techType) {techType.insertBefore(newNav, info)}
+                else {navAndInfo.appendChild(newNav)}
             }
          });
     
         if ($(window).width() <768) {
             moveUp()
+        }
+        else {
+            if(techType) {techType.insertBefore(newNav, info)}
+            else {navAndInfo.appendChild(newNav)}
         }
         
     } else (console.log(false))
@@ -134,19 +146,41 @@
         $(window).resize(function() {
             if ($(window).width() >=768) {
                 $(blurDiv).css({"margin-left": "0"})
+                nav.style.display = "block"
+                blurDiv.style.display = "flex"
+                hamburger.style.display = "none"
+                if(container.childNodes[container.childNodes.length - 1] === $("div")) {
+                    container.removeChild(newDiv);
+                } else {return}
             }
             else {
                 $(blurDiv).css({"margin-left": "calc(100% - 254px)"})
+                nav.style.display = "none"
+                blurDiv.style.display = "none"
+                hamburger.style.display = "flex"
+                // container.insertBefore(newDiv, container.childNodes[0])
             }
-            });
+        });
     
         if ($(window).width() >=768) {
             $(blurDiv).css({"margin-left": "0"})
+            nav.style.display = "block"
+            blurDiv.style.display = "flex"
+            hamburger.style.display = "none"
+            if(container.childNodes[container.childNodes.length - 1] === $("div")) {
+                container.removeChild(newDiv);
+            } else {return}
+            // container.removeChild(newDiv);
         }
         else {
             $(blurDiv).css({"margin-left": "calc(100% - 254px)"})
+            nav.style.display = "none"
+            blurDiv.style.display = "none"
+            hamburger.style.display = "flex"
         }
     }
+
+    console.log(container.childNodes[container.childNodes.length - 1])
 
     blurMargin()
 })()

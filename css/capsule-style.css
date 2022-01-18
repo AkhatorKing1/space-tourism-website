@@ -675,6 +675,7 @@ p {
     }
     
     .nav-wrapper hr {
+        display: block;
         position: absolute;
         width: 32.8vw;
         margin-left: 7.77vw;
@@ -708,7 +709,7 @@ p {
         margin-top: 0px;
         opacity: 0.9;
         font-family: 'Barlow Condensed';
-        font-size: 16px;
+        font-size: 1.1vw;
         font-weight: lighter;
         text-transform: uppercase;
         letter-spacing: 2.7px;
@@ -743,6 +744,7 @@ p {
     }
     
     #num {
+        display: block;
         font-weight: bold;
     }
     
