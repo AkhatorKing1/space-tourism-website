@@ -55,15 +55,6 @@
         hamburger.style.display = "flex"
     })
 
-    // function removeNav() {
-    //     if ($(window).width() <768  && nav.display === "block") {
-    //         container.addEventListener('click', () => {
-    //             nav.style.display = "none"
-    //             console.log("clicked")
-    //         })
-    //      }
-    // }
-
     function removeNav() {
         newDiv.addEventListener('click', () => {
             if ($(window).width() <768  && displaySwitch === "ON") {

@@ -798,7 +798,7 @@ p {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-        width: 79.02vw;
+        width: 75.58vw;
         height: 55.4vh;
         margin-left: 11.45vw;
         margin-top: 17.11vh;
@@ -806,9 +806,9 @@ p {
     
     #specialist-img {
         /* background: violet; */
-        width: 30.45vw;
+        width: 29.45vw;
         height: 72vh;
-        margin-left: 0;
+        /* margin-left: -5.17vw; */
     }
     
     .nav-and-info {
